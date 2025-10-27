@@ -34,6 +34,19 @@ waitForPort = 5000
 [workflows.workflow.metadata]
 outputType = "webview"
 
+[[workflows.workflow]]
+name = "Build for GitHub Pages"
+author = 49057635
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npm run build"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "echo \"Build complete! Deploy the 'dist' folder to GitHub Pages\""
+
 [[ports]]
 localPort = 5000
 externalPort = 80
