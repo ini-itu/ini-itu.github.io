@@ -50,7 +50,3 @@ args = "echo \"Build complete! Deploy the 'dist' folder to GitHub Pages\""
 [[ports]]
 localPort = 5000
 externalPort = 80
-
-[[ports]]
-localPort = 40863
-externalPort = 3000
