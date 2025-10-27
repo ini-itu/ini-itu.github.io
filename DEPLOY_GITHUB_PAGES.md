@@ -1,5 +1,17 @@
 # Panduan Deploy ke GitHub Pages
 
+## ⚠️ Catatan Penting tentang URL
+
+Website ini menggunakan **Hash Routing** untuk kompatibilitas dengan GitHub Pages. Artinya:
+
+- URL akan menggunakan tanda `#` (hash): 
+  - Home: `https://ini-itu.github.io/#/`
+  - Shop: `https://ini-itu.github.io/#/shop`
+  - About: `https://ini-itu.github.io/#/about`
+  
+- Hash routing memastikan semua halaman dapat di-refresh dan di-bookmark tanpa error 404
+- Ini adalah solusi standar untuk Single Page Applications (SPA) di GitHub Pages
+
 ## 📋 Langkah-Langkah Setup (Hanya Sekali)
 
 ### 1. Pastikan Repository Sudah Benar

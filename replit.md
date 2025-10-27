@@ -11,6 +11,7 @@ This is a modern furniture e-commerce website built with React, TypeScript, Vite
 - **GitHub Actions Workflow**: Created automated deployment workflow (.github/workflows/deploy.yml)
 - **Added .nojekyll**: Prevents Jekyll processing for proper Vite build deployment
 - **Updated README**: Added comprehensive deployment instructions
+- **Changed to HashRouter**: Replaced BrowserRouter with HashRouter for GitHub Pages compatibility (prevents 404 on refresh/deep links)
 
 ## Project Structure
 - **Pages**: Home, Shop, Product Detail, About, Contact, Cart, 404
