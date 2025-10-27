@@ -10,6 +10,16 @@ export default defineConfig(({ mode }) => ({
     host: "0.0.0.0",
     port: 5000,
   },
+  preview: {
+    host: "0.0.0.0",
+    port: 5000,
+  },
+  build: {
+    outDir: "dist",
+    assetsDir: "assets",
+    sourcemap: false,
+    minify: "esbuild",
+  },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
     alias: {
