@@ -1,73 +1,83 @@
-# Welcome to your Lovable project
+# Luxe Living - Furniture E-Commerce
 
-## Project info
+A modern furniture e-commerce website built with React, TypeScript, Vite, and shadcn/ui.
 
-**URL**: https://lovable.dev/projects/d74b3924-cb0e-4cfd-9524-b71c46ae83c6
+## 🚀 Deployment to GitHub Pages
 
-## How can I edit this code?
+This project is configured to deploy to GitHub Pages at the root directory (`https://ini-itu.github.io/`).
 
-There are several ways of editing your application.
+### Automatic Deployment
 
-**Use Lovable**
+Every push to the `main` branch automatically triggers a GitHub Actions workflow that builds and deploys the site.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d74b3924-cb0e-4cfd-9524-b71c46ae83c6) and start prompting.
+### Manual Setup (First Time Only)
 
-Changes made via Lovable will be committed automatically to this repo.
+1. Go to your repository settings: `https://github.com/ini-itu/ini-itu.github.io/settings/pages`
+2. Under **Build and deployment**:
+   - **Source:** Select "GitHub Actions"
+3. Go to `Settings → Actions → General → Workflow permissions`:
+   - Enable "Read and write permissions"
+   - Save changes
 
-**Use your preferred IDE**
+### Deploy Manually
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+You can also trigger a manual deployment:
+1. Go to the "Actions" tab in your repository
+2. Select "Deploy to GitHub Pages" workflow
+3. Click "Run workflow"
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Local Development
 
-Follow these steps:
+```bash
+# Install dependencies
+npm install
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server (runs on http://localhost:5000)
 npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
 ```
 
-**Edit a file directly in GitHub**
+## 📁 Project Structure
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```
+├── src/
+│   ├── pages/          # Page components (Home, Shop, About, etc.)
+│   ├── components/     # Reusable components
+│   │   └── ui/        # shadcn/ui components
+│   ├── data/          # Static data (products)
+│   ├── hooks/         # Custom React hooks
+│   ├── lib/           # Utility functions
+│   └── assets/        # Images and media
+├── public/            # Static files
+└── .github/
+    └── workflows/     # GitHub Actions workflows
+```
 
-**Use GitHub Codespaces**
+## 🛠️ Tech Stack
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- **Framework:** React 18
+- **Build Tool:** Vite 5
+- **Language:** TypeScript
+- **Routing:** React Router DOM
+- **UI Components:** shadcn/ui + Radix UI
+- **Styling:** Tailwind CSS
+- **State Management:** TanStack Query
+- **Forms:** React Hook Form + Zod
 
-## What technologies are used for this project?
+## 🎨 Features
 
-This project is built with:
+- Responsive design
+- Product browsing and filtering
+- Shopping cart functionality
+- Multiple pages (Home, Shop, Product Detail, About, Contact)
+- Modern UI with shadcn components
+- SEO optimized
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📝 Original Project
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/d74b3924-cb0e-4cfd-9524-b71c46ae83c6) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+This project was originally created with [Lovable](https://lovable.dev/projects/d74b3924-cb0e-4cfd-9524-b71c46ae83c6).
